@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>365 Entertainment</title>
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/css/all.css" rel ="stylesheet">
+    <link rel="stylesheet" type='text/css' href="365h.css">
+   
+</head>
+
+<body>
+    <header>
+        <nav>
+            
+            <a href="365.html">
+                <img src="images/logo365.png" id="logo" alt="logo"></a>      
+			<a href="365mov.html" class = "active">Movies</a>
+			<a href="365.html">TV Shows</a>
+            <a href="365.html">Audio</a>
+            
+			
+		</nav>
+    </header>
+    <div class="carousel-cont">
+
+        <i class="fas fa-chevron-left" id = preBtn></i>
+        <i class="fas fa-chevron-right" id = nxtBtn></i>
+        
+        <div class="carousel-slide">
+    
+            <img src ="images/img5.jpg " id="lastClone" alt="fidaa">
+            <img src ="images/img1.jpg"  alt="avatar">
+            <img src ="images/img2.jpg " alt="mission mangal">
+            <img src ="images/img3.jpg "  alt="avengers endgame">
+            <img src ="images/img4.jpg "  alt="maleficent">
+            <img src ="images/img5.jpg " alt="fidaa">
+            <img src ="images/img1.jpg"  id="firstClone" alt="avatar">
+
+        </div>
+    </div>
+
+    <!--------------------the genre and search bar----------------------->
+
+    <div class = "filter">
+
+    <div class ="genre">
+    <select name="genre" id="mygenre" onchange="genreFunction()" placeholder="Genre">
+        <option value="" disabled selected hidden>Genre</option>
+          <option value="all">All</option>
+          <option value="action">Action</option>
+        
+          <option value="drama">Drama</option>
+          <option value="sci-fi">Sci-Fi</option>
+        
+    </select>
+    </div>
+   
+    
+        <div class = "input-field">    
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search your favorite movie title" >
+        <i class="fas fa-search"></i>
+        </div>
+    
+    </div>
+
+ 
+
+    <section class="APopular">
+        <div class ="mytable">
+
+
+            <div class= "container">
+                <img src = "images/chhichhore.jpg" alt = " ">
+                <div class ="content">
+                    <p><h3>Chhichhore</h3><u>Drama Hindi</u>  <br>
+                        Divided by time, united by a tragic incident. In a bittersweet reunion, seven middle-aged friends take a walk down the memory lane at the least expected place.                </p>
+                </div>
+            </div>
+            <div class ="container">
+                <img src = "images/housefull4.jpg" alt = "">
+                <div class ="content">
+                    <p><h3>Housefull 4</h3><u>Comedy Hindi</u><br>Old villains and a series of mishaps turn this reincarnation drama into a comedy of errors.</p>
+                </div>
+            </div>
+            <div class= "container">
+                <img src = "images/predator.jpg" alt = " ">
+                <div class ="content">
+                    <p><h3>The Predator</h3><u> Sci-Fi </u><br>
+                        The Predators have returned to Earth and, only a ragtag crew of ex-soldiers and an evolutionary biology professor can protect the human race.                </p>
+                </div>
+            </div>
+            <div class ="container">
+                <img src = "images/fidaa.jpg" alt = "">
+                <div class ="content">
+                     <p><h3>Fidaa</h3><u>Romance</u><br>Varun, an NRI medical student, falls in love with Bhanu, a village belle. However, their chalk-and-cheese personalities create obstacles for them.</p>
+                </div>
+            </div>
+            <div class= "container">
+                <img src = "images/mission-mangal.jpg" alt = " ">
+                <div class ="content">
+                    <p><h3>Mission Mangal</h3><u> Drama Hindi </u><br>
+                        Based on the true story of India's finest scientists who rose above hardships and failures to make us the only country to reach Mars in its first attempt.                </p>
+                </div>
+            </div>
+            <div class ="container">
+                <img src = "images/Titanic.jpg" alt = "">
+                <div class ="content">
+                    <p><h3>Titanic</h3><u>Romance English</u><br>Rose is engaged to marry Caledon Hockley but falls in love with a poor artist Jack Dawson aboard the luxurious ill-fated R.M.S. Titanic.</p>
+                </div>
+            </div>
+
+            <div class ="container">
+                <img src = "images/hero.jpg" alt = "">
+                <div class ="content">
+                     <p><h3>Hero</h3><u>Romance</u><br>A gangster's son kidnaps the daughter of the Chief of Police, as her father has some crucial evidence. While the police chase the two, love blooms between them.</p>
+                </div>
+            </div>
+            <div class= "container">
+                <img src = "images/highway.jpg" alt = " ">
+                <div class ="content">
+                    <p><h3>Highway</h3> <u>Drama Hindi</u> <br>
+                        Veera is abducted on the eve of her wedding. At first, she resists and scorns her abductor, Mahabir. But slowly she builds a connection with him.                </p>
+                </div>
+            </div>
+            <div class= "container">
+                <img src = "images/alice-in-wonderland.jpg" alt = " ">
+                <div class ="content">
+                    <p><h3>Alice In Wonderland</h3><u>Family Drama</u>  <br>
+                        Nineteen-year-old Alice returns to the magical world, where she reunites with her old friends and learns of her true destiny.                </p>
+                </div>
+            </div>
+            <div class= "container">
+                <img src = "images/2-states.jpg" alt = " ">
+                <div class ="content">
+                    <p><h3>2 States</h3><u> Romance Drama Hindi</u> <br>
+                        Based on a novel by Chetan Bhagat; North and South India come together in this whirlwind romance between a Punjabi boy and a Tamilian girl.                </p>
+                </div>
+            </div>
+            <div class= "container">
+                <img src = "images/Beauty-Beast.jpg" alt = " ">
+                <div class ="content">
+                    <p><h3>Beauty And The Beast</h3><u> Romance Drama</u> <br>
+                        Belle is taken prisoner by a beast in his castle. Despite her fears, she looks beyond the Beast's hideous exterior to realize the soul of the true Prince within.                
+                    </p>
+                </div>
+            </div>
+            <div class= "container">
+                <img src = "images/tanhaji.jpg" alt = " ">
+                <div class ="content">
+                    <p><h3>Tanhaji</h3><u>Action Hindi</u> <br>
+                    As Aurangzeb captures the Kondhana Fort, Tanhaji Malusare, Chhatrapati Shivaji Maharaj's trusted military leader and braveheart, ventures out to win it back.
+                    </p>
+                </div>
+           </div>
+            <div class ="container">
+                <img src = "images/panga.jpg" alt = "">
+                <div class ="content">
+                     <p><h3>Panga</h3><u>Drama Hindi</u><br>A forgotten Kabaddi world champion catalyzes an inner desire to give a new meaning to her existing role as a wife and mother, and makes a comeback.</p>
+                </div>
+            </div>
+             <div class= "container">
+                <img src = "images/spies-in-disguise.jpg" alt = " ">
+                <div class ="content">
+                
+                    <p><h3>Spies In Disguise</h3> <u>Action English</u><br>
+                    The unlikely duo of super spy Lance Sterling and scientist Walter Beckett is forced to work as a team for an ultimate undercover mission.</p>
+                
+                </div>
+            </div>
+             <div class= "container">
+                <img src = "images/india's-most-wanted.jpg" alt = " ">
+                <div class ="content">
+                    <p><h3>India’s Most Wanted</h3><u>Action Hindi </u><br>
+                    Five ordinary men, one global terrorist, witness India's biggest manhunt operation in this film inspired by true events.</p>
+                </div>
+             </div>
+        <div class= "container">
+            <img src = "images/captain-america.jpg" alt = " ">
+            <div class ="content">
+                <p><h3>Captain America: The Winter Soldier</h3><u> Action Superhero</u> <br>
+                    Heroes battle a powerful yet shadowy enemy in Washington, D.C.ions and restore balance to the universe.</p>
+            </div>
+        </div>
+        <div class ="container">
+            <img src = "images/Maleficent.jpg" alt = "">
+            <div class ="content">
+                <p><h3>Maleficent: Mistress Of Evil</h3><u>Family</u><br>Maleficent and her goddaughter Aurora begin to question their tangled ties as they are pulled in different directions by the impending wedding.</p>
+            </div>
+        </div>
+
+
+        <div class= "container">
+            <img src = "images/avengers-infinity.jpg" alt = " ">
+            <div class ="content">
+                <p><h3>Avengers: Infinity War</h3><u>Action Superhero</u> <br>
+                    With the powerful Thanos on the verge of raining destruction upon the universe, the Avengers will have to risk everything to stop him.</p>
+            </div>
+        </div>
+        <div class= "container">
+            <img src = "images/bang-bang.jpg" alt = " ">
+            <div class ="content">
+                <p><h3>Bang Bang</h3><u>Action Hindi </u><br>
+                    Rajveer sets out to steal the world's most coveted diamond, the Kohinoor, triggering a series of fights, car chases and a revenge plot.</p>
+            </div>
+        </div>
+        <div class= "container">
+            <img src = "images/terminator.jpg" alt = " ">
+            <div class ="content">
+                <p><h3>Terminator: Dark Fate</h3><u>Sci-Fi </u><br>
+                    Dani Ramos joins forces with Grace, a futuristic soldier and Sarah Connor to fight against a highly advanced Terminator, a Rev-9.                </p>
+            </div>
+        </div>
+        <div class ="container">
+            <img src = "images/drishyam.jpg" alt = "">
+            <div class ="content">
+                 <p><h3>Drishyam</h3><u>Thriller Hindi</u><br>Story of a common family man who takes desperate measures to save his wife and two daughters when they unwittingly get entangled into a crime.</p>
+            </div>
+        </div>
+        <div class= "container">    
+            <img src = "images/armageddon.jpg" alt = " ">
+            <div class ="content">
+                <p><h3>Armageddon</h3><u>Sci-Fi</u> <br>
+                    After discovering that a large asteroid is going to impact Earth in less than a month, NASA recruits a misfit team of deep-core drillers to save the planet.                </p>
+            </div>
+        </div>
+        <div class= "container">
+            <img src = "images/maze-runner-death-cure.jpg" alt = " ">
+            <div class ="content">
+                <p><h3>Maze Runner: The Death Cure</h3> <u>Sci-fi</u> <br>
+                    The Young hero embarks on a mission to find a cure for the deadly virus which turns people into zombies.                </p>
+            </div>
+        </div>
+        <div class ="container">
+                <img src = "images/alladin.jpg" alt = "">
+                <div class ="content">
+                    <p><h3>Alladin</h3><u>Family Drama</u><br>In this live-action retelling of 1992 classic, Aladdin and a power-hungry Grand Vizier vie for a magic lamp that can make their deepest wishes come true.</p>
+                </div>
+        </div>
+        <div class ="container">
+            <img src = "images/the-lion-king.jpg" alt = "">
+            <div class ="content">
+                 <p><h3>The Lion King</h3><u>Family Drama</u><br>In the African savanna, a young prince overcomes betrayal and tragedy to assume his rightful place on Pride Rock.</p>
+            </div>
+        </div>
+        <div class ="container">
+            <img src = "images/avengers-endgame.jpg" alt = "">
+            <div class ="content">
+                <p><h3>Avengers: Endgame</h3><u>
+                    Superhero Action</u><br>After the devastating events of the Infinity War, the Avengers assemble once more to reverse Thanos’ act </p>
+            </div>
+        </div>
+
+        <div class= "container">
+            <img src = "images/avatar.jpg" alt = " ">
+            <div class ="content">
+                <p><h3>Avatar</h3><u>Sci-Fi</u><br>
+                    Former Marine Jake Sully is deployed as an Avatar on a mission to Pandora but, he ultimately finds himself torn between two worlds.</p>            
+            </div>
+        </div>
+        <div class ="container">
+            <img src = "images/housefull3.jpg" alt = "">
+            <div class ="content">
+                <p><h3>Housefull 3</h3><u>Comedy Hindi</u><br>With superstition plaguing his mind, a Gujarati businessman doesn't want his three daughters to get married. Who will win over this overprotective father?</p>
+            </div>
+        </div>
+
+        <div class ="container">
+            <img src = "images/housefull2.jpg" alt = "">
+            <div class ="content">
+                <p><h3>Housefull 2</h3><u>Comedy Hindi</u><br>Four fathers look for the richest groom for their daughters. Chaos ensues as all the prospective grooms are pretending to be what they are not, i.e., rich.</p>
+            </div>
+        </div>
+
+
+        
+        <div class= "container">
+            <img src = "images/maze-runner.jpg" alt = " ">
+            <div class ="content">
+                <p><h3>The Maze Runner</h3><u>Sci-Fi</u> <br>
+                    Thomas wakes up in an elevator and finds himself in a strange world of young boys who are trying to escape through the Maze that surrounds their living space.                </p>
+            </div>
+        </div>
+        <div class ="container">
+            <img src = "images/arjun-reddy.jpg" alt = "">
+            <div class ="content">
+                <p><h3>Arjun Reddy</h3><u>Romance Hindi</u><br>A short-tempered yet brilliant young medical surgeon immerses himself in drugs and alcohol when his lady-love is forced to marry someone else.</p>
+            </div>
+        </div>
+        <div class ="container">
+            <img src = "images/avengers-age.jpg" alt = "">
+            <div class ="content">
+                <p><h3>Marvel's Avengers: Age Of Ultron</h3><u>
+                    Superhero Action</u><br>Tony Stark builds an AI system named Ultron, and when things go wrong, it's up to Earth's mightiest heroes to stop the villain from enacting his terrible plan.</p>
+            </div>
+        </div>
+        <div class ="container">
+            <img src = "images/avengers.jpg" alt = "">
+            <div class ="content">
+                <p><h3>Marvel's The Avengers</h3><u>
+                    Superhero Action</u><br>Nick Fury finds himself in need of a team to pull the world back from the brink of disaster by launching the Avengers initiative.</p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+           function genreFunction() {
+          // Declare variables
+          var input1, filter1, table1, tr1, td1, i, txtValue1;
+          input1 = document.getElementById("mygenre");
+          filter1 = input1.value.toUpperCase();
+          console.log(filter1);
+          if(filter1=="ALL"){
+              return
+          }
+          
+          tr1 = document.getElementsByClassName("container");
+        
+        
+          // Loop through all table rows, and hide those who don't match the search query
+          for (i = 0; i < tr1.length; i++) {
+            td1 = tr1[i].getElementsByTagName("u")[0];
+            if (td1) {
+              txtValue1 = td1.textContent || td1.innerText;
+              
+              if (txtValue1.toUpperCase().indexOf(filter1) > -1) {
+                tr1[i].style.display = "";
+              } else {
+                tr1[i].style.display = "none";
+              }
+            }
+          }
+        }
+
+
+        function myFunction() {
+          // Declare variables
+          var input, filter, table, tr, td, i, txtValue;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          console.log(filter);
+          
+          tr = document.getElementsByClassName("container");
+          //tr = table.getElementsByClassName("container");
+        
+          // Loop through all table rows, and hide those who don't match the search query
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("h3")[0];
+            if (td) {
+              txtValue = td.textContent || td.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }
+          }
+        }
+     
+        </script>
+
+
+
+
+
+
+    <script src="365.js"></script>
+
+</body>
+
+<footer>
+    <div class ="bottom">
+    <img src="images/logo365.png" alt="logo">
+    <p>Powered by 365 Entertainment Portal 2019. All rights reserved.</p>
+    </div>
+
+
+</footer>
+
+</html>
